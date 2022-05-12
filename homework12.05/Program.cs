@@ -27,6 +27,12 @@ namespace homework12._05
                 
                 count--;
             }
+            Console.WriteLine("Enter the minumum count");
+            int min = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the maximum count");
+            int max = Convert.ToInt32(Console.ReadLine());
+            country.FindAllByPopulation(min, max);
+
             country.Sum();
             goto NewPalace;
 
